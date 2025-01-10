@@ -64,9 +64,9 @@ elif selected_option and selected_option=="Examinees Plot":
     # Display the first plot
     st.subheader(f"ME Examinees (ABET) Plot")
     image1 = Image.open(plot1_path)
-    st.image(image1, use_column_width=True)
+    st.image(image1, use_container_width=True)
     
     # Display the second plot
     st.subheader(f"Purdue ME Examinees (ABET) Plot")
     image2 = Image.open(plot2_path)
-    st.image(image2, use_column_width=True)
+    st.image(image2, use_container_width=True)
