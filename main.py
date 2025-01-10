@@ -51,12 +51,12 @@ if selected_option and selected_option!="Examinees Plot":
     # Display the first plot
     st.subheader(f"Ratio Score for {selected_option}")
     image1 = Image.open(plot1_path)
-    st.image(image1, use_column_width=True)
+    st.image(image1, use_container_width=True)
     
     # Display the second plot
     st.subheader(f"Scaled Score for {selected_option}")
     image2 = Image.open(plot2_path)
-    st.image(image2, use_column_width=True)
+    st.image(image2, use_container_width=True)
 
 elif selected_option and selected_option=="Examinees Plot":
     plot1_path, plot2_path = plots[selected_option]
